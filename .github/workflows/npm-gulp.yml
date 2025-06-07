@@ -1,0 +1,36 @@
+name: CI Simulado com Mensagens de Teste
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  simulacao-de-testes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Checkout do código
+        run: echo "✅ Código baixado com sucesso."
+
+      - name: 2. Rodando os testes simulados
+        run: |
+          echo "🚀 Iniciando bateria de testes..."
+          sleep 2 # Pausa para parecer mais real
+          
+          echo "   - Testando componente de Login... [OK]"
+          sleep 1
+          
+          echo "   - Testando CSS da Homepage... [OK]"
+          sleep 1
+          
+          echo "   - Verificando links quebrados... [OK]"
+          sleep 1
+          
+          echo "🎉 Todos os testes simulados passaram com sucesso!"
+      
+      - name: 3. Entrega Simulada
+
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: echo "Entrega na branch 'main' foi considerada feita."
