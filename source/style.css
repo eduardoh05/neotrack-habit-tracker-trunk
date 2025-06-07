@@ -6,8 +6,8 @@ body {
   }
   
   main {
-    max-width: 500px;
-    margin: 40px auto;
+    max-width: 400px;
+    margin: 60px auto;
     background: #fff;
     border-radius: 8px;
     padding: 32px 24px;
@@ -16,32 +16,53 @@ body {
   
   h1, h2 {
     color: #2b3a67;
+    text-align: center;
   }
   
   form {
     display: flex;
-    gap: 8px;
-    margin-bottom: 24px;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
   }
   
-  input[type="text"] {
-    flex: 1;
-    padding: 8px;
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
     border: 1px solid #bfc9d9;
     border-radius: 4px;
+    font-size: 16px;
   }
   
   button {
     background: #2b3a67;
     color: #fff;
     border: none;
-    padding: 8px 16px;
+    padding: 10px 0;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    margin-top: 8px;
+    transition: background 0.2s;
   }
   
   button:active {
     background: #1e2746;
+  }
+  
+  p {
+    text-align: center;
+    color: #2b3a67;
+    margin-top: 16px;
+  }
+  
+  a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
   }
   
   #habits-list {
