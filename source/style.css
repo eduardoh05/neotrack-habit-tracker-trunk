@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  
+  h1, h2 {
+    color: #2b3a67;
+  }
+  
+  form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #bfc9d9;
+    border-radius: 4px;
+  }
+  
+  button {
+    background: #2b3a67;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:active {
+    background: #1e2746;
+  }
+  
+  #habits-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .habit-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eaf0fb;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    border-radius: 4px;
+  }
+  
+  .habit-name {
+    font-weight: bold;
+    color: #2b3a67;
+  }
+  
+  .progress-btn {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .progress-btn.done {
+    background: #bdbdbd;
+  }
