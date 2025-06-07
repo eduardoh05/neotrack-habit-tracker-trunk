@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Neotrack - Cadastro de Hábitos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Meu Projeto</h1>
-    </header>
-    <main>
-        <p>Este é um exemplo de projeto utilizando HTML, CSS e JavaScript.</p>
-    </main>
-    <footer>
-        <p>&copy; 2023 Meu Projeto</p>
-    </footer>
-    <script src="script.js"></script>
+  <main>
+    <h1>Neotrack - Cadastro de Hábitos</h1>
+    <form id="habit-form">
+      <input type="text" id="habit-name" placeholder="Nome do hábito" required>
+      <button type="submit">Adicionar Hábito</button>
+    </form>
+    <section id="habits-list-section">
+      <h2>Meus Hábitos</h2>
+      <ul id="habits-list"></ul>
+    </section>
+  </main>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
